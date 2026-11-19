@@ -1,0 +1,6 @@
+{
+  "name": "Cambio Dolor — Aprende español con música",
+  "description": "Plataforma educativa interactiva de español y armenio basada en la canción Cambio Dolor de Natalia Oreiro (A1–B2).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

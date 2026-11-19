@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy: #71152F;
+  --color-crimson: #A71D36;
+  --color-vermilion: #C93439;
+  --color-tangerine: #F07835;
+  --color-gold: #F6B94C;
+  --color-cream: #FFF1DF;
+  --color-canvas: #FFF8F0;
+  --color-ink: #2B0A14;
+
+  --font-display: "Playfair Display", "Noto Serif Armenian", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Armenian", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.55;
+    scroll-behavior: smooth;
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 17.5px;
+    }
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom subtle scrollbars for warm palette */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF1DF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9343966;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A71D36AA;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
